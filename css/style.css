@@ -1,0 +1,33 @@
+
+
+.leftsticky{
+    position: sticky;
+    width: 15%;
+    background-color: aquamarine;
+    height: 100%;
+}
+
+#ACElogo{
+    position: relative;
+    justify-content: center;
+    padding: 15px;
+    top: 15px;
+    height: 60px;
+
+}
+
+.navContainer {
+    align-items: center;
+    justify-content: center;
+}
+
+.navItem{
+    list-style-type: none;
+}
+
+.navItem a{
+    text-decoration: none;
+    color: black;
+}
+
+.profile {{}}
