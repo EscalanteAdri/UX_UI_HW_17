@@ -1,10 +1,23 @@
 
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.mainContent {
+    margin-left: 200px;
+    float: right;
+}
+
 
 .leftsticky{
-    position: sticky;
-    width: 15%;
-    background-color: aquamarine;
+    position: fixed;
+    float: left;
     height: 100%;
+    width: 200px;
+    background-color: #305C26;
+    z-index: 1;
+    overflow-x: clip;
+    padding-top: 20px;
 }
 
 #ACElogo{
@@ -12,13 +25,9 @@
     justify-content: center;
     padding: 15px;
     top: 15px;
-    height: 60px;
+    left: 20px;
+    height: 50px;
 
-}
-
-.navContainer {
-    align-items: center;
-    justify-content: center;
 }
 
 .navItem{
@@ -26,8 +35,114 @@
 }
 
 .navItem a{
+    padding: 3px 3px 3px 8x;
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+
+}
+.navItem a:hover{
+
+    color: darkgreen;
 }
 
-.profile {{}}
+#profilePic {
+    display: block;
+    width: 180px;
+    margin: auto;
+}
+
+
+#FunFact{
+    color: white;
+    font-size: small;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-rows:  100% 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas:
+    "AboutMe AboutMeText"
+    "MyWorkText MyWork"
+    "ContactMe ContactMeText"
+    "ResumeText Resume"
+    "Projects ProjectsText" 
+    "BiographyText Biography"
+    ;
+}
+.gridArea {
+background-color: #D1BABE;
+margin: 0px 50px 5px 50px;
+
+}
+
+.card {
+
+}
+
+#AboutMe {
+    position: inline-block;
+/*    background-image: url(../images/phoneCase.png); */
+    grid-area: AboutMe;
+
+  }
+
+  #MyWork {
+    position: inline-block;
+/*    background-image: url(../images/phoneCase.png); */
+    grid-area: MyWork;
+  }
+
+  #Resume {
+    position: inline-block;
+/*    background-image: url(../images/phoneCase.png); */
+    grid-area: Resume;
+}
+
+#ContactMe {
+
+    position: inline-block;
+/*    background-image: url(../images/phoneCase.png); */
+    grid-area: ContactMe;
+
+}
+
+#Projects {
+    position: inline-block;
+/*    background-image: url(../images/phoneCase.png); */
+    grid-area: Projects;
+
+}
+
+#Biography{
+    position: inline-block;
+/*    background-image: url(../images/phoneCase.png); */
+    grid-area: Biography;
+
+}
+
+#GovRedesign {
+    width: 250px;
+}
+
+#NonProfitRedesign {
+    width: 300px;
+}
+
+.heading{
+    padding: 25px;
+    height: 25px;
+    color: black;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+ 
